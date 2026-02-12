@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:
+  cap:
+    image: tiago2/cap:latest
+    container_name: cap
+    environment:
+      ADMIN_KEY: your_secret_password
+    volumes:
+      - cap-data:/usr/src/app/.data
+    restart: unless-stopped
+    networks:
+      - nginx-load-balancer
+
+volumes:
+  cap-data:
+networks:
+  nginx-load-balancer:
+    external: true
+    name: docker_nginx-load-balancer
