@@ -9,7 +9,7 @@ in development.
 ## Production
 `sudo docker compose up -d`
 
-Server will be availble under `cap.openstate.eu`.
+Server will be availble under `capjs.openstate.eu`.
 
 
 ## Development
@@ -18,7 +18,3 @@ In case you want to experiment with this in development:
   `sudo docker compose -f docker-compose-dev.yml up -d`
 
 Server will be available under `localhost:3090`
-
-
-
-
